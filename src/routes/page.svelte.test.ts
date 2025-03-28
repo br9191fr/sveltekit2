@@ -8,4 +8,8 @@ describe('/+page.svelte', () => {
 		render(Page);
 		expect(screen.getByRole('heading', { level: 1 })).toBeInTheDocument();
 	});
+	test('should render h2', () => {
+		render(Page);
+		expect(screen.getByRole('heading', { level: 2 })).toBeInTheDocument();
+	});
 });
